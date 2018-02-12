@@ -1,0 +1,62 @@
+
+<h2>Educación</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2018 - Actual</td>
+            <td>Next University</td>
+            <td>Web</td>
+            <td>Cursando</td>
+        </tr>
+        <tr>
+            <td>2014 - 2017</td>
+            <td>SENATI</td>
+            <td>Independencia - Callao</td>
+            <td>Egresado</td>
+        </tr>
+        <tr>
+            <td>2006 - 2007</td>
+            <td>IPAL</td>
+            <td>Lima</td>
+            <td>Culminado</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Agregar Estudios</h3>
+<form name="frm_NewStudy" method="POST">
+    <label>Año :</label>
+    <select name="cb_year">
+        <option disabled selected>Seleccionae el Año</option>
+        <option value="2017">2014</option>
+        <option value="2017">2015</option>
+        <option value="2017">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+    </select>
+    <br>
+    <br>
+    <label>Institución :</label>
+    <input type="text" name="txt_institution" required />
+    <br>
+    <br>
+    <label>Lugar :</label>
+    <textarea name="txtarea_city" rows="2" cols="20" style="resize: none"></textarea>
+    <br>
+    <br>
+    <label>Estado:</label>
+    <input type="radio" name="btnradio" value="Culminado" id="Culminado" /> <label for="Culminado">Culminado</label>
+    <input type="radio" name="btnradio" value="Egresado" id="Egresado" /> <label for="Egresado">Egresado</label>
+    <input type="radio" name="btnradio" value="Cursando" id="Cursando" /> <label for="Cursando">Cursando</label>
+    <br>
+    <br>
+    <input type="submit" value="Agregar" name="btn_send" />
+</form>
